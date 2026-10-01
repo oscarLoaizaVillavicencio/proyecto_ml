@@ -1,0 +1,19 @@
+# Entorno virtual y caché de Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Editor
+.vscode/
+
+# Datos y modelos pesados (se regeneran con el código)
+data/raw/*
+data/processed/*
+models/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
