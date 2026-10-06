@@ -12,6 +12,8 @@ Una empresa pierde clientes cada mes. Contactar a todos con una oferta de retenc
 
 ## Hallazgos del análisis exploratorio
 
+![Churn por contrato, internet y método de pago](reports/figures/churn_por_variable.png)
+
 - **El contrato es el factor más fuerte.** Churn de 42.7% con contrato mensual, 11.3% con uno de un año y 2.8% con uno de dos años. El segmento mensual agrupa a 3,875 clientes.
 - **Los primeros meses son críticos.** Churn de 52.9% en clientes con 0 a 6 meses de antigüedad y de 9.5% con más de 4 años.
 - **Fibra óptica, pago con cheque electrónico y ausencia de soporte técnico** se asocian con mayor abandono (~42%, ~45% y ~41% respectivamente).
@@ -49,6 +51,8 @@ La regresión logística y el random forest rinden igual: la diferencia de AUC (
 La accuracy del baseline es casi igual a la del modelo sin detectar un solo abandono, por eso **no se usa como métrica principal**: se priorizan recall, precision y AUC.
 
 ### El umbral depende del costo de actuar
+
+![Beneficio esperado según el umbral](reports/figures/beneficio_vs_umbral.png)
 
 Con supuestos hipotéticos (valor del cliente 300, oferta que retiene al 50%):
 
@@ -113,4 +117,4 @@ Luego ejecuta los notebooks en orden (01, 02, 03). Los datos no se incluyen en e
 
 ## Autor
 
-**Tu Nombre** · [LinkedIn](https://www.linkedin.com/in/TU_USUARIO) · [GitHub](https://github.com/TU_USUARIO)
+**Tu Nombre** · [LinkedIn](https://www.linkedin.com/in/oscar-fernando-loaiza-medina-3495ba269/) · [GitHub](https://github.com/oscarLoaizaVillavicencio)
