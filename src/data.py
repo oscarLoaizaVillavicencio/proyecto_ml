@@ -63,3 +63,5 @@ def cargar_procesado() -> pd.DataFrame:
 
 if __name__ == "__main__":
     descargar_datos()
+    ruta = guardar_procesado(limpiar_datos(cargar_raw()))
+    print(f"Datos limpios guardados en {ruta}")
